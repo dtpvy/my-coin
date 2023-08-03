@@ -9,6 +9,7 @@ import {
   useToast,
 } from "@chakra-ui/react";
 import { useMutation } from "@tanstack/react-query";
+import { Back } from "iconsax-react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 
@@ -123,6 +124,17 @@ const LoginPage = () => {
           colorScheme="blue"
         >
           Submit
+        </Button>
+        <Button
+          type="button"
+          onClick={() => navigate("/")}
+          rightIcon={<Back />}
+          size="lg"
+          variant="outline"
+          className="w-full mt-3"
+          colorScheme="blue"
+        >
+          Back
         </Button>
       </form>
     </div>
